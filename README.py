@@ -1,5 +1,5 @@
 #MARWA Zeghoudi \ Master 1 microbiologie fondamentale \ 12-12-2025
-#HANANE Yahoui
+#HANANE YAHIAOUI 
 #SARRA Imouloudene 
 #NOURHANE Bedai
 #SELSABILE Benchadli
@@ -26,3 +26,9 @@ print("-------------Opération-------------","\n")
 #2.b)Sélectionner la colonne "Longueur":
 lng = df["Longueur"]
 print(lng,"\n")
+
+#5) Ajouter une colonne "catégorie GC" avec des calculs :
+print("-------------Ajouter d'une colonne-------------","\n") 
+df["Catégorie GC"] = df["Pourcentage GC"].apply(lambda x: "Riche" if x > 55 else "Moyen" if 45 <= x <= 55 else "Faible")
+print(df)
+print("\n")
