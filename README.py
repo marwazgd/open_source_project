@@ -2,7 +2,7 @@
 #HANANE YAHIAOUI 
 #SARRA Imouloudene 
 #NOURHANE Bedai
-#SELSABILE Benchadli
+#SHAHINAZ Benchadli
 
 import pandas as pd
 
@@ -26,6 +26,16 @@ print("-------------Opération-------------","\n")
 #2.b)Sélectionner la colonne "Longueur":
 lng = df["Longueur"]
 print(lng,"\n")
+
+#3)Filtrer les séquences dont la longueur est supérieure à 10 :
+print("-------------Filtrage de langueur des séquences > 10-------------","\n")
+filtered_df = df[df["Longueur"]>10] print(filtered_df)
+print("\n") 
+
+#4) Calculer le pourcentage moyen de GC avec 3 chiffres après la virgule : 
+print("-------------calcul de la moyenne-------------","\")   
+moyenne = df["Pourcentage GC"].mean() print(f"Pourcentage moyen GC :[{moyenne :.3f}%")
+print("\n") 
 
 #5) Ajouter une colonne "catégorie GC" avec des calculs :
 print("-------------Ajouter d'une colonne-------------","\n") 
