@@ -29,7 +29,8 @@ print(lng,"\n")
 
 #3)Filtrer les séquences dont la longueur est supérieure à 10 :
 print("-------------Filtrage de langueur des séquences > 10-------------","\n")
-filtered_df = df[df["Longueur"]>10] print(filtered_df)
+filtered_df = df[df["Longueur"]>10] 
+print(filtered_df)
 print("\n") 
 
 #4) Calculer le pourcentage moyen de GC avec 3 chiffres après la virgule : 
