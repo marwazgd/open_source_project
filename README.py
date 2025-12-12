@@ -55,4 +55,6 @@ ecarttype_GC = df["Pourcentage GC"].std()
 ecarttype_longeure = df["Longueur"].std()
 print(f"ecart type de pourcentage de GC : {ecarttype_GC: .2f}")
 print(f"ecart type de Longueur : {ecarttype_longeure: .2f}""\n")
+#8)Sauvegarde le tableau final dans un fichier CSV:
+df.to_csv("Tableau_séquences.csv",index=False)
 
