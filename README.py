@@ -45,6 +45,14 @@ df["Catégorie GC"] = df["Pourcentage GC"].apply(lambda x: "Riche" if x > 55 els
 print(df)
 print("\n")
 #6)Ajouter une colonne donnant le nombre de G dans chaque séquence: 
-df["Nombre de G"] = df["séquence"].str.count("G") 
+df["Nombre de G"] = df["Séquence"].str.count("G") 
 print("-------------Nombre de G-------------","\n") 
 print (df,"\n") 
+
+#7) Calculer l‟écart-type du %GC et de la longueur des séquences :
+print("-------------Calculer l'écart-type-------------","\n")
+ecarttype_GC = df["Pourcentage GC"].std()
+ecarttype_longeure = df["Longueur"].std()
+print(f"ecart type de pourcentage de GC : {ecarttype_GC: .2f}")
+print(f"ecart type de Longueur : {ecarttype_longeure: .2f}""\n")
+
