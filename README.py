@@ -35,7 +35,8 @@ print("\n")
 
 #4) Calculer le pourcentage moyen de GC avec 3 chiffres après la virgule : 
 print("-------------calcul de la moyenne-------------","\n")   
-moyenne = df["Pourcentage GC"].mean() print(f"Pourcentage moyen GC :[{moyenne :.3f}%")
+moyenne = df["Pourcentage GC"].mean() 
+print(f"Pourcentage moyen GC :[{moyenne :.3f}%")
 print("\n") 
 
 #5) Ajouter une colonne "catégorie GC" avec des calculs :
