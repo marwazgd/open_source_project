@@ -42,3 +42,7 @@ print("-------------Ajouter d'une colonne-------------","\n")
 df["Catégorie GC"] = df["Pourcentage GC"].apply(lambda x: "Riche" if x > 55 else "Moyen" if 45 <= x <= 55 else "Faible")
 print(df)
 print("\n")
+#6)Ajouter une colonne donnant le nombre de G dans chaque séquence: 
+df["Nombre de G"] = df["séquence"].str.count("G") 
+print("-------------Nombre de G-------------","\n") 
+print (df,"\n") 
